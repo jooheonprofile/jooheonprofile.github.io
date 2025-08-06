@@ -8,6 +8,9 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
+    color-scheme: light only;
+    background-color: #ffffff !important;
+    color: #2c3e50 !important;
 }
 
 :root {
@@ -21,7 +24,7 @@ html, body {
     --light-text: #7f8c8d;
     --bg-color: #ffffff;
     --bg-light: #f8f9fa;
-    --bg-dark: #0f0f1e;
+
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -40,10 +43,12 @@ html {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
-    color: #2c3e50;
-    background: #ffffff;
+    color: #2c3e50 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
     min-height: 100vh;
     overflow-x: hidden;
+    color-scheme: light only;
 }
 
 /* 음악 플레이어 - 플로팅 버튼 */
@@ -1650,6 +1655,21 @@ a:focus {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* 강제 라이트 모드 설정 */
+* {
+    color-scheme: light only !important;
+}
+
+html {
+    color-scheme: light only !important;
+    background-color: #ffffff !important;
+}
+
+body {
+    color-scheme: light only !important;
+    background-color: #ffffff !important;
 }
 
  
