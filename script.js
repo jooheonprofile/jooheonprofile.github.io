@@ -401,16 +401,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// 다크모드 토글 (선택사항)
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-}
 
-// 다크모드 설정 복원
-if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-}
 
 // 접근성 개선: 키보드 네비게이션
 document.addEventListener('keydown', (e) => {
